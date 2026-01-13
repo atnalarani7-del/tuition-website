@@ -1,49 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Atnala Tuition Classes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#f4f6f8; }
-    header { background:#1e40af; color:white; padding:20px; text-align:center; }
-    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
-    section { padding:40px; max-width:1000px; margin:auto; }
-    .card { background:white; padding:25px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); margin-bottom:20px; }
-    footer { background:#111827; color:#d1d5db; text-align:center; padding:15px; }
-    button { background:#1e40af; color:white; border:none; padding:12px 20px; border-radius:6px; cursor:pointer; }
-    button:hover { background:#1d4ed8; }
-  </style>
+<meta charset="UTF-8">
+<title>Online Tuition</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f4f8;
+  color: #1f2937;
+}
+
+/* Header with gradient background */
+header {
+  background: linear-gradient(135deg, #6d5dfc, #43e97b);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+header p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+}
+
+.btn {
+  background: #ff512f;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #dd2476;
+}
+
+/* Sections */
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+  background: linear-gradient(90deg, #ff512f, #f09819);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px;
+}
+
+.card {
+  background: linear-gradient(135deg, #ffffff, #e0e7ff);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: white;
+  border-radius: 20px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #ff512f;
+}
+
+footer {
+  background: #0f172a;
+  color: #cbd5f5;
+  text-align: center;
+  padding: 20px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
   <h1>Atnala Online Tuition</h1>
-  <nav>
-    <a href="#courses">Courses</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <p>Professional Online Classes with Personal Attention</p>
+  <a class="btn" href="tel:9704344661">📞 Call Now</a>
+  <a class="btn" href="https://wa.me/919704344661" target="_blank">💬 WhatsApp</a>
 </header>
 
-<section class="card">
-  <h2>Professional Online Tuition</h2>
-  <p>Live online classes with personal attention, expert teaching, and weekly tests.</p>
-  <button>Join Free Demo Class</button>
-</section>
-
-<section id="courses" class="card">
+<section>
   <h2>Our Courses</h2>
-  <ul>
-    <li>Mathematics</li>
-    <li>Science</li>
-    <li>English</li>
-  </ul>
+  <div class="cards">
+    <div class="card">
+      <img src="https://img.icons8.com/fluency/96/math.png" alt="Math Icon"/>
+      <h3>Mathematics</h3>
+      <p>Strong fundamentals & exam preparation for all classes.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/fluency/96/physics.png" alt="Science Icon"/>
+      <h3>Science</h3>
+      <p>Concept clarity with real examples & experiments.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/fluency/96/book.png" alt="English Icon"/>
+      <h3>English</h3>
+      <p>Grammar, writing, and communication improvement.</p>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="card">
+<section class="contact">
   <h2>Contact Us</h2>
-  <p>📞 Phone: <b>9704344661</b></p>
-  <p>📧 Email: <b>atnalarani26@gmail.com</b></p>
+  <p>📞 <a href="tel:9704344661">9704344661</a></p>
+  <p>📧 <a href="mailto:atnalarani26@gmail.com">atnalarani26@gmail.com</a></p>
+  <a class="btn" href="https://wa.me/919704344661" target="_blank">💬 Message on WhatsApp</a>
 </section>
 
 <footer>
