@@ -2,49 +2,46 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
 <title>Home Tuition in Hyderabad | Online Tuition for Classes 1 to 10</title>
-<meta name="google-site-verification" content="rGq3C_Qva5s7POY1I0ziNA2Q8P5tagc1TtEdscOBDg4" />
-<meta name="description" content="Best home tuition in Hyderabad and online tuition classes for Maths, Science, English and all subjects for Classes 1 to 10. Experienced tutors with personal attention.">
 
-<meta name="keywords" content="home tuition in Hyderabad, online tuition Hyderabad, maths tuition Hyderabad, science tuition Hyderabad, home tutors in Hyderabad, online tuition classes">
-
+<meta name="description" content="Best home tuition in Hyderabad and online tuition for Classes 1 to 10. Expert tutors for Maths, Science, English with personal attention.">
+<meta name="keywords" content="home tuition in Hyderabad, online tuition Hyderabad, maths tuition Hyderabad, science tuition Hyderabad">
 <meta name="robots" content="index, follow">
-
 <link rel="canonical" href="https://tuition-website-mu.vercel.app/">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+* { box-sizing: border-box; }
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #f0f4f8;
+  background: #f5f7fb;
   color: #1f2937;
 }
 
+/* HEADER */
 header {
-  background: linear-gradient(135deg, #6d5dfc, #43e97b);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   padding: 80px 20px;
   text-align: center;
 }
 
 header h1 {
-  font-size: 48px;
+  font-size: 46px;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
 header p {
   font-size: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
+/* BUTTONS */
 .btn {
-  background: #ff512f;
+  background: #ff7a18;
   color: white;
   padding: 14px 28px;
   border-radius: 30px;
@@ -56,9 +53,25 @@ header p {
 }
 
 .btn:hover {
-  background: #dd2476;
+  background: #ff3d00;
 }
 
+/* SLIDER */
+.slider {
+  max-width: 1000px;
+  margin: -60px auto 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.slider img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* SECTIONS */
 section {
   max-width: 1200px;
   margin: auto;
@@ -67,24 +80,23 @@ section {
 
 h2 {
   text-align: center;
-  margin-bottom: 40px;
   font-size: 36px;
-  background: linear-gradient(90deg, #ff512f, #f09819);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  color: #4f46e5;
 }
 
+/* CARDS */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
 .card {
-  background: linear-gradient(135deg, #ffffff, #e0e7ff);
+  background: white;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   text-align: center;
   transition: 0.3s;
 }
@@ -93,19 +105,38 @@ h2 {
   transform: translateY(-10px);
 }
 
-.contact {
-  background: linear-gradient(135deg, #43e97b, #38f9d7);
-  color: white;
-  border-radius: 20px;
-  padding: 60px 20px;
-  text-align: center;
+.card img {
+  width: 90px;
+  margin-bottom: 15px;
 }
 
+/* CONTACT */
+.contact {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding: 60px 20px;
+}
+
+.contact a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* FOOTER */
 footer {
   background: #0f172a;
   color: #cbd5f5;
   text-align: center;
   padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header h1 { font-size: 34px; }
+  .slider img { height: 260px; }
 }
 </style>
 </head>
@@ -113,23 +144,48 @@ footer {
 <body>
 
 <header>
-  <h1>Home Tuition in Hyderabad & Online Tuition</h1>
+  <h1>Home Tuition in Hyderabad</h1>
   <p>Personalized Home & Online Classes for Classes 1 to 10</p>
   <a class="btn" href="tel:9704344661">📞 Call Now</a>
   <a class="btn" href="https://wa.me/919704344661" target="_blank">💬 WhatsApp</a>
 </header>
 
+<!-- IMAGE SLIDER -->
+<div class="slider">
+  <img id="slide" src="https://images.unsplash.com/photo-1600054800747-4c3a5e7b0c31" alt="Kids Learning">
+</div>
+
 <section>
-  <h2>Classes We Offer (1 to 10)</h2>
+  <h2>Classes & Subjects</h2>
   <div class="cards">
-    <div class="card"><h3>Class 1–5</h3><p>Maths, English, Science, EVS, Computer</p></div>
-    <div class="card"><h3>Class 6–8</h3><p>Maths, Science, English, Social, Hindi</p></div>
-    <div class="card"><h3>Class 9–10</h3><p>Maths, Physics, Chemistry, Biology, English</p></div>
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/classroom.png"/>
+      <h3>Classes 1–5</h3>
+      <p>Maths, English, Science, EVS, Computer</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/student-male.png"/>
+      <h3>Classes 6–8</h3>
+      <p>Maths, Science, English, Social, Hindi</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/graduation-cap.png"/>
+      <h3>Classes 9–10</h3>
+      <p>Maths, Physics, Chemistry, Biology</p>
+    </div>
   </div>
 </section>
 
+<section>
+  <h2>Areas We Serve in Hyderabad</h2>
+  <p style="text-align:center; font-size:18px;">
+    Kukatpally • Miyapur • Ameerpet • SR Nagar •  
+    Gachibowli • Kondapur • Hitech City • Dilsukhnagar
+  </p>
+</section>
+
 <section class="contact">
-  <h2>Contact for Home Tuition in Hyderabad</h2>
+  <h2>Contact Us</h2>
   <p>📞 <a href="tel:9704344661">9704344661</a></p>
   <p>📧 <a href="mailto:atnalarani26@gmail.com">atnalarani26@gmail.com</a></p>
   <a class="btn" href="https://wa.me/919704344661" target="_blank">💬 Message on WhatsApp</a>
@@ -139,20 +195,17 @@ footer {
   © 2026 Atnala Home & Online Tuition Hyderabad. All Rights Reserved.
 </footer>
 
-<!-- Local SEO Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "Home Tuition Hyderabad",
-  "url": "https://tuition-website-mu.vercel.app/",
-  "areaServed": {
-    "@type": "City",
-    "name": "Hyderabad"
-  },
-  "teaches": ["Maths", "Science", "English"],
-  "educationalCredentialAwarded": "School Level Coaching"
-}
+<script>
+const images = [
+ "https://images.unsplash.com/photo-1600054800747-4c3a5e7b0c31",
+ "https://images.unsplash.com/photo-1588072432836-e10032774350",
+ "https://images.unsplash.com/photo-1596495578065-6e0763fa1178"
+];
+let index = 0;
+setInterval(() => {
+  index = (index + 1) % images.length;
+  document.getElementById("slide").src = images[index];
+}, 3000);
 </script>
 
 </body>
